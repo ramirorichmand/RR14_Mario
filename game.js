@@ -74,5 +74,4 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
     'x': [sprite('blue-steel'), solid(), scale(0.5)],
 
 
-  start("game")
-
+    start("game", { level: 0, score: 0})
