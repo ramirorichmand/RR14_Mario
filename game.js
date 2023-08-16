@@ -85,5 +85,17 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
     '@': [sprite('blue-surprise'), solid(), scale(0.5), 'coin-surprise'],
     'x': [sprite('blue-steel'), solid(), scale(0.5)],
 
+  }
+
+  const gameLevel = addLevel(maps[level], levelCfg)
+
+  const scoreLabel = add([
+    text(score),
+    pos(30, 6),
+    layer('ui'),
+    {
+      value: score,
+    }
+  ])
 
     start("game", { level: 0, score: 0})
