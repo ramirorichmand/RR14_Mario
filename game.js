@@ -117,4 +117,8 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
     player.move(-MOVE_SPEED, 0)
   })
 
+  keyDown('right', () => {
+    player.move(MOVE_SPEED, 0)
+  })
+
     start("game", { level: 0, score: 0})
