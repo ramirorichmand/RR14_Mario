@@ -98,4 +98,7 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
     }
   ])
 
+  const player = add([
+    sprite('mario'), solid(),
+
     start("game", { level: 0, score: 0})
