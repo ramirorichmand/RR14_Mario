@@ -98,6 +98,9 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
     }
   ])
 
+  add([text('level ' + parseInt(level + 1) ), pos(40, 6)])
+
+
   const player = add([
     sprite('mario'), solid(),
     pos(30, 0),
