@@ -121,4 +121,19 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
     player.move(MOVE_SPEED, 0)
   })
 
+  player.action(() => {
+    if(player.grounded()) {
+      isJumping = false
+    }
+  })
+
+  keyPress('space', () => {
+    if (player.grounded()) {
+      isJumping = true
+      player.jump(CURRENT_JUMP_FORCE)
+    }
+  })
+})
+
+
     start("game", { level: 0, score: 0})
