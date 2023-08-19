@@ -106,4 +106,8 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
     origin('bot')
   ])
 
+  action('mushroom', (m) => {
+    m.move(20, 0)
+  })
+
     start("game", { level: 0, score: 0})
