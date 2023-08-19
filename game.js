@@ -8,6 +8,10 @@ kaboom({
     clearColor: [0, 0, 0, 1],
   })
 
+// Speed identifiers
+const MOVE_SPEED = 120
+const JUMP_FORCE = 360
+
 // Game logic
 
 let isJumping = true
