@@ -100,6 +100,8 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
 
   const player = add([
     sprite('mario'), solid(),
+    pos(30, 0),
+    body(),
     big(),
     origin('bot')
   ])
