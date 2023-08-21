@@ -126,6 +126,13 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
         timer = 0
         isBig = false
       },
+            biggify(time) {
+        this.scale = vec2(2)
+        timer = time
+        isBig = true     
+      }
+    }
+  }
 
 
   const player = add([
