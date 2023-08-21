@@ -114,6 +114,18 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
           timer -= dt()
           if (timer <= 0) {
             this.smallify()
+            }
+        }
+      },
+      isBig() {
+        return isBig
+      },
+      smallify() {
+        this.scale = vec2(1)
+        CURRENT_JUMP_FORCE = JUMP_FORCE
+        timer = 0
+        isBig = false
+      },
 
 
   const player = add([
