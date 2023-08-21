@@ -147,6 +147,9 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
     m.move(20, 0)
   })
 
+    player.on("headbump", (obj) => {
+    if (obj.is('coin-surprise')) {
+
   keyDown('left', () => {
     player.move(-MOVE_SPEED, 0)
   })
