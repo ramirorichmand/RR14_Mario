@@ -149,6 +149,10 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
 
     player.on("headbump", (obj) => {
     if (obj.is('coin-surprise')) {
+            gameLevel.spawn('$', obj.gridPos.sub(0, 1))
+      destroy(obj)
+      gameLevel.spawn('}', obj.gridPos.sub(0,0))
+    }
 
   keyDown('left', () => {
     player.move(-MOVE_SPEED, 0)
