@@ -169,6 +169,9 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
     player.biggify(6)
   })
 
+  player.collides('coin', (c) => {
+    destroy(c)
+
   keyDown('left', () => {
     player.move(-MOVE_SPEED, 0)
   })
