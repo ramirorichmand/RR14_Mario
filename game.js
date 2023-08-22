@@ -166,6 +166,8 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
 
   player.collides('mushroom', (m) => {
     destroy(m)
+    player.biggify(6)
+  })
 
   keyDown('left', () => {
     player.move(-MOVE_SPEED, 0)
