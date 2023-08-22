@@ -168,6 +168,9 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
     destroy(m)
     player.biggify(6)
   })
+  scoreLabel.value++
+  scoreLabel.text = scoreLabel.value
+})
 
   player.collides('coin', (c) => {
     destroy(c)
