@@ -172,12 +172,11 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
     scoreLabel.value++
     scoreLabel.text = scoreLabel.value
   })
-  scoreLabel.value++
-  scoreLabel.text = scoreLabel.value
-})
 
-  player.collides('coin', (c) => {
-    destroy(c)
+  action('dangerous', (d) => {
+    d.move(-ENEMY_SPEED, 0)
+  })
+
 
   keyDown('left', () => {
     player.move(-MOVE_SPEED, 0)
