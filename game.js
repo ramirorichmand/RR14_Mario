@@ -177,6 +177,10 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
     d.move(-ENEMY_SPEED, 0)
   })
 
+  player.collides('dangerous', (d) => {
+    if (isJumping) {
+      destroy(d)
+
 
   keyDown('left', () => {
     player.move(-MOVE_SPEED, 0)
