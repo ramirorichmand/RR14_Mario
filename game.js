@@ -180,6 +180,10 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
   player.collides('dangerous', (d) => {
     if (isJumping) {
       destroy(d)
+    } else {
+      go('lose', { score: scoreLabel.value})
+    }
+  })
 
 
   keyDown('left', () => {
