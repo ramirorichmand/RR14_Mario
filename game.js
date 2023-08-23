@@ -71,7 +71,7 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
         '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!',
       ]
 
-  })
+    ]
 
   const levelCfg = {
     width: 20,
