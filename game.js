@@ -70,7 +70,6 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
         '£               z   z  x x x x x  x   ()£',
         '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!',
       ]
-
     ]
 
   const levelCfg = {
@@ -138,7 +137,6 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
     }
   }
 
-
   const player = add([
     sprite('mario'), solid(),
     pos(30, 0),
@@ -167,6 +165,12 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
   player.collides('mushroom', (m) => {
     destroy(m)
     player.biggify(6)
+  })
+
+  player.collides('coin', (c) => {
+    destroy(c)
+    scoreLabel.value++
+    scoreLabel.text = scoreLabel.value
   })
   scoreLabel.value++
   scoreLabel.text = scoreLabel.value
