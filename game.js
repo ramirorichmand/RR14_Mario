@@ -192,6 +192,14 @@ loadSprite('blue-surprise', 'RMqCc1G.png')
     }
   })
 
+  player.collides('pipe', () => {
+    keyPress('down', () => {
+      go('game', {
+        level: (level + 1) % maps.length,
+        score: scoreLabel.value
+      })
+    })
+  })
 
   keyDown('left', () => {
     player.move(-MOVE_SPEED, 0)
