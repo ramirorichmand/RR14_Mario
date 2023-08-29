@@ -12,6 +12,8 @@ The Mario Game Code Along is a game development project using JavaScript and HTM
 
 If you've liked or found this helpful, please consider giving it a star 🌟 and supporting me on my journey to improve my programming skills and chase my aspirations. I'd love to hear your feedback on this project, so feel free to leave your thoughts and suggestions 📬
 
-Every contribution counts and is deeply appreciated as I pursue a path of lifelong learning and aim to share meaningful content for <b> the gamers and </b>  🌎
+Every contribution counts and is deeply appreciated as I pursue a path of lifelong learning and aim to share meaningful content for <b> the gamers and mario enthusiasts </b>  🌎
 
 Thank you again for your support! 🙏
+
+<a href="https://www.buymeacoffee.com/ramiro.richmand"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;"  target="_blank"></a>
